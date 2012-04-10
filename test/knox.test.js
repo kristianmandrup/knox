@@ -94,10 +94,10 @@ module.exports = {
         req.on('response', function(res){
           assert.equal(200, res.statusCode);
           assert.equal(
-              'https://'+client.endpoint+'/'+client.bucket+'/test/user.json'
+              'http://'+client.endpoint+'/'+client.bucket+'/test/user.json'
             , client.url('/test/user.json'));
           assert.equal(
-              'https://'+client.endpoint+'/'+client.bucket+'/test/user.json'
+              'http://'+client.endpoint+'/'+client.bucket+'/test/user.json'
             , req.url);
           done();
         });
@@ -252,7 +252,11 @@ module.exports = {
     }).end();
   },
   
+<<<<<<< HEAD
   'test .deleteFile()': function(done){
+=======
+  'test .deleteFile()': function(assert, done){
+>>>>>>> master
     client.deleteFile('/test/user2.json', function(err, res){
       assert.ok(!err);
       assert.equal(204, res.statusCode);

@@ -1,11 +1,7 @@
 {
   "name": "knox",
   "description": "Amazon S3 client",
-  "keywords": [
-    "aws",
-    "amazon",
-    "s3"
-  ],
+  "keywords": ["aws", "amazon", "s3"],
   "version": "0.0.9",
   "author": "TJ Holowaychuk <tj@learnboost.com>",
   "main": "./index.js",
